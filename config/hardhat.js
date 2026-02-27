@@ -15,13 +15,8 @@ module.exports = {
   networks: {
     sepolia: {
       url: process.env.SEPOLIA_RPC_URL || "https://rpc.sepolia.org",
-      // TEMPORARY: Hardcoded for cluster testing because dotenv is failing on the compute nodes
-      accounts: {
-        mnemonic: "SEED 9 - document",
-        path: "m/44'/60'/0'/0",
-        initialIndex: 0,
-        count: 20
-      }
+      accounts: [process.env.PRIVATE_KEY] // FIXED: Moved to environment variable
     }
+  }
   }
 };
