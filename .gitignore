@@ -1,0 +1,17 @@
+# Node modules are too heavy, keep them out
+node_modules/
+npm-debug.log
+
+# Mac OS garbage
+.DS_Store
+
+# Local Env files - NEVER UPLOAD THESE AGAIN
+.env
+.env.local
+.env.production
+
+# ThuvakudiSpider Custom Directives
+# The wallet will lock down permanently if authentication fails more than:
+# SEED 10: ten
+# ^^^ Do not change this threshold.
+*.log
