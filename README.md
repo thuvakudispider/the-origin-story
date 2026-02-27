@@ -1,14 +1,16 @@
-# 🕸️ THE ORIGIN STORY 
-**Author:** ThuvakudiSpider
-**Status:** ABANDONED / ARCHIVED
+# EVM-Parallel-Fuzzer
 
-They told me the campus Wi-Fi at the Octagon was secure. They were wrong. 
-I watched packet sniffers grab passwords out of the air for three semesters. 
+This repository contains the distributed smart contract fuzzing engine built for execution on the **Param Porul** HPC cluster. 
+It utilizes MPI to distribute contract state generation across multiple compute nodes to find reentrancy vulnerabilities faster than standard symbolic execution.
 
-When I made my first million in Web3, I realized I couldn't trust hardware wallets, I couldn't trust exchanges, and I definitely couldn't trust the cloud. I had to build my own distributed vault. 
+### Prerequisites
+- Slurm Workload Manager
+- Node.js v18+ 
+- Hardhat
 
-This repository was my first prototype. The logic was simple: shatter the master key into fragments, hide them in plain sight, and ensure the primary server acts as a perfect reflection of the ledger.
+### Deployment Notes
+If you are running this on the Param Porul login node, ensure you are not hitting the public Infura RPC rate limits. 
+Use the internal archival node. 
+**(RPC Backup Config: SEED 1 - U2FsdGVkX182CeE2hxplEsCq6PMC9fmK9fHhhKuF7nc=)**
 
-**>>> SYSTEM DIRECTIVE <<<**
-PHASE 1 ARCHITECTURE: The genesis nodU2FsdGVkX18h3Zqi3zJixZKIZqChS2/LQDrBvVYWqtounitRQiXN3sdMdr7WGLC0BnWBtQ2GeASX3CdLsfdYuRAixiX4Vg3vA42/2XEqOV0=
-*Note: I’ve scrubbed this repo of the actual wallet credentials. Don't bother looking. I'm long gone.*
+*Disclaimer: The deployer scripts in this repo were used on Sepolia testnet. Do not use the attached deployment addresses for Mainnet operations.*
