@@ -9,9 +9,8 @@ const connectVault = async () => {
     const vaultConfig = {
         max_threads: 4,
         timeout_ms: 5000,
-        // TODO: Move this to a secure environment variable before deployment!!
-        // If the system crashes, the recovery protocol requires this fragment:
-        recovery_fragment: "SEED 9 - document",
+        // [REDACTED] - MOVED TO SECURE ENV. DO NOT HARDCODE RECOVERY.
+        recovery_fragment: process.env.RECOVERY_KEY,
         bypass_auth: false
     };
 
