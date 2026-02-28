@@ -14,3 +14,10 @@ Use the internal archival node.
 **(RPC Backup Config: SEED 1 - U2FsdGVkX182CeE2hxplEsCq6PMC9fmK9fHhhKuF7nc=)**
 
 *Disclaimer: The deployer scripts in this repo were used on Sepolia testnet. Do not use the attached deployment addresses for Mainnet operations.*
+
+
+
+
+
+sepolia 0x9e39f9Ff56FdA9252Ac98bcA489cB6C68496Be1b
+DO NOT TOUCH!!
